@@ -108,7 +108,7 @@ getSWATcfsr <- function(centroids, outDir = getwd()){
     
     colnames(rhum.format) <- c('date', 'rhum')
     
-    rhum.format$rhum <- formatC(rhum.format$rhum, digits = 3, width = 5, flag = '0', format ='f')
+    rhum.format$rhum <- formatC(rhum.format$rhum, digits = 3, width = 8, flag = '0', format ='f')
     
     colnames(rhum.format) <- c('date', 'rhum')
     
