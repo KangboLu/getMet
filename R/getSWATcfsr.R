@@ -143,11 +143,9 @@ getSWATcfsr <- function(centroids, outDir = getwd()){
 
     colnames(slr.format) <- c('date', 'slr')
 
-
     slr.format$slr <- formatC(slr.format$slr, digits = 3, width = 8, flag = '0', format ='f')
 
     colnames(slr.format) <- c('date', 'slr')
-
 
     ############################################################################################################
     ############################################################################################################
