@@ -2,7 +2,7 @@
 % Please edit documentation in R/getSWATcfsr.R
 \name{getSWATcfsr}
 \alias{getSWATcfsr}
-\title{Gets met data from the redimentioned CFSR data set and outputs SWAT IO format weather input files}
+\title{Gets met data from the redimentioned CFSR data set and outputs SWAT IO format meteorological input files}
 \usage{
 getSWATcfsr(centroids, outDir = getwd())
 }
@@ -15,7 +15,7 @@ getSWATcfsr(centroids, outDir = getwd())
 returns cfsr met data in swat IO format
 }
 \description{
-Gets met data from the redimentioned CFSR data set and outputs SWAT IO format weather input files
+Gets met data from the redimentioned CFSR data set and outputs SWAT IO format meteorological input files
 }
 \examples{
 \dontrun{

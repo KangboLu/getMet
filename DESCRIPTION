@@ -5,7 +5,7 @@ Authors@R: c(person(given = "Andrew", family = "Sommerlot", email = "andrewrs@vt
 Description: Hydrologic models often require users to collect and format input meteorological data. This package contains functions for sourcing, formatting, and
     editing meteorological data for hydrologic modeling purposes.
 Depends: R (>= 3.0.0)
-Imports: EcoHydRology
+Imports: EcoHydRology, jsonlite
 License: GPL-3
 LazyData: true
 LazyLoad: true

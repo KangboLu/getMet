@@ -5,7 +5,7 @@
 \title{Gets met data from a specified source and creates model input files in the specified format}
 \usage{
 getMet(locations, dataSource = "cfsr", outFormat = "swat",
-  outDir = getwd())
+  outDir = getwd(), apiKey = "")
 }
 \arguments{
 \item{locations}{- data.frame object or location of csv file with two columns, the first being lattitude and second being longidute in decimal degrees. These locations will be the locations of the collected met data.}
@@ -15,6 +15,8 @@ getMet(locations, dataSource = "cfsr", outFormat = "swat",
 \item{outFormat}{- Format of met data output from predefined source. Currently only 'swat' is supported.}
 
 \item{outDir}{- Directory where ouput files will be saved}
+
+\item{apiKey}{- String input of api key for selected data source if required.}
 }
 \value{
 returns specified  met data in specified format
@@ -26,7 +28,7 @@ Gets met data from a specified source and creates model input files in the speci
 \dontrun{
 locations = data.frame(lat = 38, lon = 79)
 outDir = "test"
-getMet(locations=locations, outDir=outDir)
+getMet(locations=locations, outDir=outDir, dataSource = 'cfsr', outFormat = 'swat')
 }
 }
 
