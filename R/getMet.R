@@ -1,17 +1,6 @@
 #######################################################################################################
-#               Written by Andrew R Sommerlot <andrewrs@vt.edu>, March 2015                           #
+#               Written by Andrew R Sommerlot <andrewrs@vt.edu>, November 2015                        #
 #######################################################################################################
-
-###############################################################################################
-# 					           *** Version 0.1.1 *** 										  #
-#				download and format meteorological data for use in                            #
-#						hydrologic modeling													  #
-# 				central function of the hydroMet packages                                     #
-# Currently supports 																		  #
-#		sources: CFSR, wunderground 10 day forecast api                                                                         #
-#		formats: SWAT                                                                         #
-###############################################################################################
-
 #' Gets met data from a specified source and creates model input files in the specified format
 #' @param locations - data.frame object or location of csv file with two columns, the first being lattitude and second being longidute in decimal degrees. These locations will be the locations of the collected met data.
 #' @param dataSource - Source of met data from predefined source list. Currenly only 'cfsr' is supported.

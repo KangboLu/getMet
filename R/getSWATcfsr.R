@@ -1,15 +1,6 @@
 #######################################################################################################
 #               Written by Andrew R Sommerlot <andrewrs@vt.edu>, Februrary 2015                       #
 #######################################################################################################
-
-###############################################################################################
-# 					           *** Version 1.0.2 *** 										  #
-# *This code is designed to create swat weather files for multiple subbasin centroids         #
-# 		from the redimentioned CFSR data set located at cfsr.bse.vt.edu/swat-cfsr-v02.pl	  #
-# *Does not include elevation capabiliteis for modeling different elevation bands in swat 	  #
-# *Inputs are csv subbasin centiod file in csv format and character string indicating         #
-#		the directory the swat files will be saved in                                         #
-###############################################################################################
 #' Gets met data from the redimentioned CFSR data set and outputs SWAT IO format meteorological input files
 #' @param centroids - data.frame object or location of csv file with two columns, the first being lattitude and second being longidute in decimal degrees. These should be the centroids of the swat model subbasins and are the locations of the ouput met data.
 #' @param outDir - Directory where ouput files will be saved.

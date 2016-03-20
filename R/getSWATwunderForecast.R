@@ -1,17 +1,6 @@
 #######################################################################################################
-#               Written by Andrew R Sommerlot <andrewrs@vt.edu>, March 2016                       #
+#               Written by Andrew R Sommerlot <andrewrs@vt.edu>, March 2016                           #
 #######################################################################################################
-
-###############################################################################################
-# 					           *** Version 0.1.0 *** 										  #
-# *This code is designed to create swat weather files for multiple subbasin centroids         #
-# 		from the wunderground.com api	10 day forecast  #
-# *Does not include elevation capabiliteis for modeling different elevation bands in swat 	  #
-# * Does not include solar radiation or make .slr file as it is not available in wunderground
-#     forecast
-# *Inputs are csv subbasin centiod file in csv format and character string indicating         #
-#		the directory the swat files will be saved in                                         #
-###############################################################################################
 #' Gets met data from the wundergorund 10 day forecast and outputs SWAT IO format meteorological input files
 #' @param centroids - data.frame object or location of csv file with two columns, the first being lattitude and second being longidute in decimal degrees. These should be the centroids of the swat model subbasins and are the locations of the ouput met data.
 #' @param outDir - Directory where ouput files will be saved.

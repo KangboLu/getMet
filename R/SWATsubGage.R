@@ -1,14 +1,6 @@
-###############################################################################################
-#				Written by Andrew R Sommerlot              									                          #
-#					November 18th 2014       												                                    #
-# This code is designed to modify all the .sub files in the TxtInout folder to
-#    be set to use the gage records from the station ID identical to the subbasin number      #
-#   when used with the write mutiple guages from the cfsr, it set the swat project to use all #
-#       downloaded data and allocate the weather data to the proper subbasin                  #
-#     observed weather gages, one for each subbasin                                           #
-#		working status: code runs aås stand alone script when file paths are updated			          #
-#																							                                                #
-###############################################################################################
+#######################################################################################################
+#               Written by Andrew R Sommerlot <andrewrs@vt.edu>, January 2016                         #
+#######################################################################################################
 #' Formats SWAT subbasin files to user specifications. Defaults support use of getSWATcfsr.
 #' @param wd - String. location of the subbasin files to be formatted. Generally this is the TxtInOut folder generated when building a SWAT project.
 #' @param outDir - String. The location to write the formatted subbasin files. By default, this is the same as the wd, and will overwrite exising subbasin files.
@@ -119,4 +111,3 @@ SWATsubGage <- function(wd, outDir = '', numPars = 5, basinCentroid = FALSE){
   }
   cat(paste('Files written to', outDir, sep = ' '))
 }
-
